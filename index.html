@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Social Network</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>The Social Network</h1>
+    <h2>Ver Posts</h2>
+    <button onsubmit="postData()">Ver Posts</button>
+    <ul id="postList"></ul>
+    
+    <h2>Post</h2>
+    <form id="postForm"></form>
+        <input type="text" id="postTitle" required>
+        <label for="postTitle">Titulo: </label>
+        <label for="postBody"></label>
+        <textarea type="text" id="postBody" required></textarea>
+        <button type="submit">Enviar</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
