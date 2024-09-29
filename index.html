@@ -12,17 +12,17 @@
 </head>
 <body>
     <h1>The Social Network</h1>
-    <h2>Ver Posts</h2>
-    <button onsubmit="postData()">Ver Posts</button>
-    <ul id="postList"></ul>
-    
+
     <h2>Post</h2>
-    <form id="postForm"></form>
+    <form id="postForm" onsubmit="event.preventDefault(); postData()">
         <input type="text" id="postTitle" required>
         <label for="postTitle">Titulo: </label>
         <label for="postBody"></label>
         <textarea type="text" id="postBody" required></textarea>
-        <button type="submit">Enviar</button>
+        <button type="submit">Nuevo Post</button>
+    </form>
+    <ul id="postList"></ul>
+    
 
     <script src="script.js"></script>
 </body>

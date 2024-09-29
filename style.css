@@ -38,7 +38,23 @@ input,textarea{
     padding: 10px;
     margin-bottom: 10px;
     box-sizing: border-box;
-    font-size: 20px;   
+    font-size: 2;   
 }
 
+ul{ 
+    list-style: none;
+    padding: 0;
+}
 
+.postItem{
+    background-color: rgb(172, 212, 223);
+    border: 1px solid #a1a6c1;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.editForm{
+    display: none;
+    margin-top: 10px;
+
+}
